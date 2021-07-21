@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400&display=swap');
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  border: 0;  
+  vertical-align: baseline; 
+}
+
+body {  
+  background-image: url(../img/bg-1.jpg);
+  background-repeat: no-repeat;  
+  background-position: 50% 0;  
+  background-color: #000000;
+  background-size: cover;   
+  font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;  
+  color: #FFFFFF;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+.header-img {
+  flex: 2.5 0 auto;
+
+  min-height: 384px;  
+  background-image: url(../img/golden-slot-machine-with-flying-1.png);
+  background-repeat: no-repeat;  
+  background-position: 50% 0;
+  background-size: auto 384px;    
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.content-box {  
+  flex: 1 0 auto;  
+  
+  margin: 0 auto;
+  padding: 0 15px;
+  line-height: 82%;
+  text-transform: uppercase;
+}
+
+.content-box__title {  
+  font-size: 107px;
+  line-height: 82%;  
+  text-shadow: 0px 0px 9px rgba(255, 170, 0, 0.7);  
+  margin-bottom: 15px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.content-box__subtitle {  
+  font-size: 45px;
+  line-height: 94%;  
+  text-shadow: 0px 0px 9px rgba(255, 170, 0, 0.7); 
+  margin-bottom: 30px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.content-box__button {
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 57px;
+  line-height: 82%;  
+  text-shadow: 0px 5.02564px 3.76923px rgba(0, 0, 0, 0.25);
+  background: #EE3132;
+  border-radius: 10px;
+  padding: 30px 60px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.content-box__button:hover {
+  background: #ac0000;
+}
+
+.disclaimer {
+  flex-shrink: 0;
+  
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 15px 15px 30px;  
+}
+
+.disclaimer-title {   
+  margin-bottom: 5px;  
+}
+
+@media (max-width: 415px) {
+  .header-img {
+    min-height: 260px;
+    background-size: auto 260px;
+  }  
+  .content-box__title {  
+    font-size: 70px;    
+    margin-bottom: 15px;
+  }  
+  .content-box__subtitle {  
+    font-size: 35px;    
+    margin-bottom: 15px;
+  }  
+  .content-box__button {    
+    font-size: 35px;    
+    padding: 20px 40px;
+    margin-bottom: 15px;
+  }
+  .disclaimer {     
+    padding: 15px;  
+  }
+}
+
